@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "stack": {
+    "framework": "next",
+    "styling": "tailwind",
+    "primitives": "shadcn",
+    "runtime": "motion"
+  },
+  "compFirst": true,
+  "openDesignPath": null,
+  "atelierPath": null,
+  "namespaces": [
+    "@aceternity",
+    "@skiper-ui",
+    "@vengeanceui",
+    "@originkit"
+  ],
+  "maxExtraNamespaces": 2,
+  "maxWowBackgrounds": 1,
+  "bindings": {
+    "research.brief": "website-research",
+    "intake.interview": "impeccable",
+    "ingest.reference": "image-to-code",
+    "direction.taste": "design-taste-frontend",
+    "od.design": "open-design",
+    "system.tokens": "color-theory",
+    "narrative.structure": "scrollcraft",
+    "composition.sections": "impeccable",
+    "comp.generate": "image-to-code",
+    "explore.variants": "emil-design-eng",
+    "motion.choreography": "auto",
+    "motion.interaction": "emil-design-eng",
+    "media.render": "google-flow",
+    "media.world": "scroll-world",
+    "blocks.registry": "catalog",
+    "assembly.codegen": "impeccable",
+    "gate.static": "impeccable",
+    "gate.rendered": "antigravity-browser",
+    "gate.judged": "web-design-guidelines",
+    "release.deploy": "atelier-core"
+  },
+  "budget": {
+    "mediaUsdCap": 80,
+    "autoApproveUnder": 0
+  }
+}

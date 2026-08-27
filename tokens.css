@@ -1,0 +1,28 @@
+/* Newton Tool Repair Ltd. — OKLCH Design Tokens */
+:root {
+  --color-ground: oklch(18.70% 0.0063 271.07);
+  --color-raised: oklch(23.08% 0.0143 266.95);
+  --color-surface: oklch(27.50% 0.0180 266.00);
+  --color-line: oklch(30.29% 0.0242 271.53);
+  --color-line-subtle: oklch(25.00% 0.0180 270.00);
+  --color-ink: oklch(96.77% 0.0027 286.35);
+  --color-ink-secondary: oklch(71.07% 0.0351 256.79);
+  --color-accent: oklch(76.86% 0.1600 70.08);
+  --color-accent-hover: oklch(80.50% 0.1550 70.08);
+  --color-accent-ink: oklch(15.00% 0.0200 70.08);
+
+  --color-success: oklch(75.00% 0.1100 145.00);
+  --color-warning: oklch(78.00% 0.1200 75.00);
+  --color-danger: oklch(65.00% 0.1200 28.00);
+
+  --font-display: "Space Grotesk", system-ui, -apple-system, sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-exit: cubic-bezier(0.7, 0, 0.84, 0);
+  --dur-micro: 120ms;
+  --dur-short: 200ms;
+  --dur-medium: 320ms;
+  --grain-opacity: 0.035;
+}

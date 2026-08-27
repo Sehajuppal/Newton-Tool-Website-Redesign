@@ -1,0 +1,93 @@
+{
+  "tokens": {
+    "color": {
+      "space": "oklch",
+      "anchorHue": 70.08,
+      "chromaAccentMax": 0.16,
+      "roles": {
+        "ground": "oklch(18.70% 0.0063 271.07)",
+        "raised": "oklch(23.08% 0.0143 266.95)",
+        "surface": "oklch(27.50% 0.0180 266.00)",
+        "line": "oklch(30.29% 0.0242 271.53)",
+        "lineSubtle": "oklch(25.00% 0.0180 270.00)",
+        "ink": "oklch(96.77% 0.0027 286.35)",
+        "inkSecondary": "oklch(71.07% 0.0351 256.79)",
+        "accent": "oklch(76.86% 0.1600 70.08)",
+        "accentHover": "oklch(80.50% 0.1550 70.08)",
+        "accentInk": "oklch(15.00% 0.0200 70.08)",
+        "success": "oklch(75.00% 0.1100 145.00)",
+        "warning": "oklch(78.00% 0.1200 75.00)",
+        "danger": "oklch(65.00% 0.1200 28.00)"
+      },
+      "accentBudget": {
+        "maxFilledPerViewport": 2
+      }
+    },
+    "type": {
+      "display": "Space Grotesk, system-ui, sans-serif",
+      "text": "Plus Jakarta Sans, system-ui, sans-serif",
+      "mono": "JetBrains Mono, monospace",
+      "scale": {
+        "xs": "clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem)",
+        "sm": "clamp(0.8125rem, 0.75rem + 0.3vw, 0.875rem)",
+        "base": "clamp(0.9375rem, 0.875rem + 0.35vw, 1rem)",
+        "lg": "clamp(1.0625rem, 1rem + 0.4vw, 1.125rem)",
+        "xl": "clamp(1.25rem, 1.15rem + 0.5vw, 1.375rem)",
+        "2xl": "clamp(1.5rem, 1.35rem + 0.75vw, 1.75rem)",
+        "3xl": "clamp(1.875rem, 1.65rem + 1.1vw, 2.25rem)",
+        "4xl": "clamp(2.25rem, 1.95rem + 1.5vw, 2.875rem)",
+        "5xl": "clamp(2.75rem, 2.3rem + 2.2vw, 3.75rem)"
+      }
+    },
+    "space": {
+      "base": "4px",
+      "1": "0.25rem",
+      "2": "0.5rem",
+      "3": "0.75rem",
+      "4": "1rem",
+      "6": "1.5rem",
+      "8": "2rem",
+      "12": "3rem",
+      "16": "4rem",
+      "24": "6rem"
+    },
+    "radius": {
+      "none": "0px",
+      "sm": "2px",
+      "md": "4px",
+      "lg": "6px",
+      "pill": "9999px"
+    },
+    "depth": {
+      "card": "0 1px 2px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05)",
+      "overlay": "0 12px 32px rgba(0, 0, 0, 0.6), 0 2px 6px rgba(0, 0, 0, 0.4)",
+      "grainOpacity": "0.035"
+    },
+    "motion": {
+      "easeEnter": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "easeExit": "cubic-bezier(0.7, 0, 0.84, 0)",
+      "durMicro": "120ms",
+      "durShort": "200ms",
+      "durMedium": "320ms",
+      "lenisLerp": 0.1
+    }
+  },
+  "typography": {
+    "measureCh": [45, 75],
+    "trackingRamp": {
+      "display": "-0.03em",
+      "heading": "-0.02em",
+      "body": "-0.01em",
+      "mono": "0.04em"
+    },
+    "lightOnDarkCompensation": [
+      "Letter tracking expanded by 0.005em on dark surfaces",
+      "Subtle font-weight reduction from 600 to 500 on high-contrast white-on-slate displays"
+    ]
+  },
+  "emits": [
+    "DESIGN.md",
+    "tokens.css",
+    "PRODUCT.md"
+  ]
+}

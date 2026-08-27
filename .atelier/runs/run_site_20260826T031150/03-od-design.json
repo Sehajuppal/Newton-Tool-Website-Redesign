@@ -1,0 +1,10 @@
+{
+  "projectId": "newton-tool-repair",
+  "runId": "958cccdd-9495-48ae-afb8-b6e8d3930761",
+  "previewUrl": "http://127.0.0.1:7456/projects/newton-tool-repair/newton-tool-repair.html",
+  "status": "succeeded",
+  "skill": "frontend-design",
+  "agent": "codex",
+  "pulledDir": ".atelier/runs/run_site_20260826T031150/od",
+  "entryFile": "newton-tool-repair.html"
+}

@@ -1,0 +1,13 @@
+{
+  "repoPath": "c:\\Users\\Sehajuppal\\Desktop\\we2",
+  "entrypoints": [
+    "src/app/page.tsx",
+    "src/app/layout.tsx",
+    "src/app/globals.css"
+  ],
+  "routes": [
+    "/"
+  ],
+  "devServerUrl": "http://localhost:3000",
+  "commit": null
+}

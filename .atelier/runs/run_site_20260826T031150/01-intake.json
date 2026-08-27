@@ -1,0 +1,47 @@
+{
+  "id": "newton-tool-repair",
+  "product": "Newton Tool Repair Ltd.",
+  "oneLiner": "Surrey's premier authorized factory service and precision sharpening center for industrial power tools, pneumatics, and contractor fleets.",
+  "surface": "brand",
+  "audience": "General contractors, framing crews, finishing carpenters, cabinet makers, roofers, and trade professionals across Surrey, Delta, Langley, and Greater Vancouver who cannot afford jobsite downtime.",
+  "primaryOutcome": "Drive immediate repair drop-offs, phone inquiries, precision blade sharpening requests, and contractor service bookings through rapid diagnostics and transparent turnaround times.",
+  "voice": [
+    "Authoritative & Master-Craftsman — precision-engineered, dependable, no-nonsense industrial standard",
+    "Contractor-First & Transparent — upfront diagnostics, zero downtime focus, OEM factory-authorized guarantee",
+    "Grounded Metro Vancouver Local — Surrey trade powerhouse serving BC jobsites with rapid turnaround"
+  ],
+  "antiReferences": [
+    "Generic SaaS purple/blue neon gradient templates with floating 3D spheres",
+    "Cluttered 1990s yellow-page style directories with microscopic unformatted text tables",
+    "Fake generic stock photography of suits and clean office desks instead of real industrial workshop grit and precision tooling"
+  ],
+  "references": [
+    "https://westcoast-tool.com",
+    "https://kmstools.com",
+    "https://festoolcanada.com",
+    "https://www.newtontool.ca/",
+    "https://maps.app.goo.gl/RouKi8unCdyCc56AA"
+  ],
+  "hardConstraints": [
+    "Must feature factory authorized warranty status for DeWalt, Metabo HPT, Rolair, Porter-Cable, Paslode, and Flex",
+    "Must prominently showcase shop phone (604) 503-3632, exact address #114 - 7533 135th St, Surrey, BC, and workshop operating hours",
+    "Must include custom carbide saw, band saw, and dado blade precision sharpening specialty",
+    "Must provide an interactive tool diagnostic / repair quote intake flow and pre-dropoff checklist",
+    "Next.js App Router + Tailwind CSS + shadcn UI + Motion responsive architecture"
+  ],
+  "assets": {
+    "hasOwnPhotography": false,
+    "hasOwnFootage": false,
+    "brandKitUrl": "https://www.newtontool.ca/",
+    "screenshots": []
+  },
+  "budget": {
+    "mediaUsdCap": 80,
+    "autoApproveUnder": 0
+  },
+  "targets": {
+    "framework": "next",
+    "mobileChain": "responsive-web",
+    "locales": ["en-CA"]
+  }
+}

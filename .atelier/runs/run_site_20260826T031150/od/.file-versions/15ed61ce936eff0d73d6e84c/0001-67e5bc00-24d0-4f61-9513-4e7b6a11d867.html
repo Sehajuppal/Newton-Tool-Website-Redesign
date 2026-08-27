@@ -1,0 +1,1015 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121316">
+  <meta name="description" content="Factory-authorized power tool repair, pneumatic overhaul, and precision blade sharpening in Surrey, BC.">
+  <title>Newton Tool Repair | Surrey Power Tool Repair &amp; Blade Sharpening</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: oklch(18.70% 0.0063 271.07);
+      --surface: oklch(23.08% 0.0143 266.95);
+      --surface-hi: oklch(27.4% 0.018 268);
+      --fg: oklch(96.77% 0.0027 286.35);
+      --muted: oklch(71.07% 0.0351 256.79);
+      --border: oklch(30.29% 0.0242 271.53);
+      --accent: oklch(76.86% 0.1600 70.08);
+      --accent-hover: oklch(81% 0.147 70.08);
+      --good: oklch(72% 0.10 151);
+      --danger: oklch(62% 0.11 28);
+      --font-display: "Space Grotesk", "Arial Narrow", sans-serif;
+      --font-body: "Plus Jakarta Sans", Arial, sans-serif;
+      --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+      --container: min(1180px, calc(100% - 48px));
+      --edge: clamp(24px, 5vw, 72px);
+      --shadow: 0 22px 50px oklch(8% 0.01 270 / 0.32);
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--bg); scroll-behavior: smooth; }
+    body {
+      min-width: 320px;
+      margin: 0;
+      overflow-x: clip;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    body::selection { background: var(--accent); color: var(--bg); }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+    button, input, select, textarea { font: inherit; }
+    button, a, select, input, textarea { -webkit-tap-highlight-color: transparent; }
+    button { cursor: pointer; }
+    button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .page-shell { overflow: hidden; }
+    .container { width: var(--container); margin-inline: auto; }
+    .mono {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .utility {
+      border-bottom: 1px solid var(--border);
+      background: oklch(16% 0.008 270);
+      color: var(--muted);
+    }
+    .utility-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 38px;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+    }
+    .open-status { display: inline-flex; align-items: center; gap: 8px; }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--good); box-shadow: 0 0 0 3px oklch(72% 0.10 151 / 0.13); }
+    .utility a { text-decoration: none; color: var(--fg); }
+    .utility a:hover { text-decoration: underline; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid oklch(30.29% 0.0242 271.53 / 0.82);
+      background: oklch(18.7% 0.0063 271.07 / 0.94);
+      backdrop-filter: blur(14px);
+    }
+    .nav {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 28px;
+      min-height: 76px;
+    }
+    .wordmark {
+      display: inline-grid;
+      gap: 0;
+      color: var(--fg);
+      text-decoration: none;
+      line-height: 1;
+    }
+    .wordmark strong {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: -0.035em;
+    }
+    .wordmark span {
+      margin-top: 5px;
+      color: var(--muted);
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; align-items: center; justify-content: center; gap: clamp(14px, 2vw, 26px); }
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.015em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-links a:hover { color: var(--fg); text-decoration: underline; }
+    .primary-button, .secondary-button, .text-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 19px;
+      border: 1px solid transparent;
+      font-family: var(--font-display);
+      font-size: 0.84rem;
+      font-weight: 600;
+      letter-spacing: 0.015em;
+      text-decoration: none;
+      transition: transform 150ms ease, background 150ms ease, border-color 150ms ease, color 150ms ease;
+    }
+    .primary-button {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: var(--bg);
+    }
+    .primary-button:hover { background: var(--accent-hover); border-color: var(--accent-hover); transform: translateY(-2px); }
+    .primary-button:active { transform: translateY(0); }
+    .secondary-button {
+      border-color: var(--border);
+      background: transparent;
+      color: var(--fg);
+    }
+    .secondary-button:hover { border-color: var(--muted); background: oklch(25% 0.014 267); }
+    .text-button {
+      min-height: auto;
+      padding: 0;
+      border: 0;
+      background: none;
+      color: var(--fg);
+      text-decoration: underline;
+      text-underline-offset: 0.24em;
+    }
+    .text-button:hover { color: var(--fg); transform: translateX(2px); }
+    .hero {
+      position: relative;
+      isolation: isolate;
+      padding: clamp(58px, 8vw, 108px) 0 40px;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero::before {
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background-image:
+        linear-gradient(oklch(34% 0.02 270 / 0.25) 1px, transparent 1px),
+        linear-gradient(90deg, oklch(34% 0.02 270 / 0.25) 1px, transparent 1px);
+      background-size: 48px 48px;
+      content: "";
+      mask-image: linear-gradient(to bottom, black, transparent 82%);
+    }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(380px, 0.84fr); gap: clamp(40px, 7vw, 100px); align-items: center; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { width: 26px; height: 1px; background: currentColor; content: ""; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      max-width: 760px;
+      margin: 18px 0 22px;
+      font-family: var(--font-display);
+      font-size: clamp(2.75rem, 5.9vw, 5.4rem);
+      font-weight: 700;
+      letter-spacing: -0.045em;
+      line-height: 0.97;
+      text-wrap: balance;
+    }
+    .hero-copy {
+      max-width: 62ch;
+      margin-bottom: 30px;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.45vw, 1.15rem);
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 13px; }
+    .hero-hotline { display: grid; gap: 2px; padding-left: 17px; border-left: 1px solid var(--border); }
+    .hero-hotline span { color: var(--muted); font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.09em; text-transform: uppercase; }
+    .hero-hotline a { font-family: var(--font-display); font-size: 1rem; font-weight: 600; text-decoration: none; }
+    .hero-hotline a:hover { text-decoration: underline; }
+    .bench-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 42px; }
+    .bench-tag {
+      display: inline-flex;
+      min-height: 32px;
+      align-items: center;
+      padding: 0 10px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-family: var(--font-mono);
+      font-size: 0.63rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .diagnostic-panel {
+      position: relative;
+      padding: 24px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .diagnostic-panel::before {
+      position: absolute;
+      top: -1px;
+      right: 20px;
+      width: 92px;
+      height: 3px;
+      background: var(--fg);
+      content: "";
+    }
+    .panel-topline { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 17px; border-bottom: 1px solid var(--border); }
+    .panel-topline span { color: var(--muted); font-family: var(--font-mono); font-size: 0.61rem; letter-spacing: 0.1em; text-transform: uppercase; }
+    .panel-topline strong { font-family: var(--font-display); font-size: 0.96rem; letter-spacing: -0.02em; }
+    .diagnostic-panel h2 { margin: 21px 0 10px; font-family: var(--font-display); font-size: clamp(1.55rem, 2.2vw, 2rem); line-height: 1.06; letter-spacing: -0.035em; }
+    .diagnostic-panel p { color: var(--muted); font-size: 0.88rem; }
+    .preview-steps { display: grid; gap: 10px; margin: 22px 0; }
+    .preview-step { display: grid; grid-template-columns: 28px 1fr auto; gap: 12px; align-items: center; min-height: 52px; padding: 10px 11px; border: 1px solid var(--border); background: oklch(20.8% 0.012 268); }
+    .step-no { color: var(--muted); font-family: var(--font-mono); font-size: 0.64rem; }
+    .preview-step strong { font-size: 0.84rem; font-weight: 600; }
+    .step-value { color: var(--muted); font-family: var(--font-mono); font-size: 0.66rem; text-align: right; }
+    .panel-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 17px; border-top: 1px solid var(--border); }
+    .panel-footer small { max-width: 24ch; color: var(--muted); font-size: 0.7rem; line-height: 1.45; }
+    .brand-tape {
+      position: relative;
+      overflow: hidden;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: oklch(16.6% 0.008 270);
+    }
+    .brand-track { display: flex; width: max-content; animation: badge-pan 32s linear infinite; }
+    .brand-list { display: flex; margin: 0; padding: 0; list-style: none; }
+    .brand-list li {
+      display: grid;
+      min-width: 190px;
+      min-height: 74px;
+      place-items: center;
+      padding: 10px 28px;
+      border-right: 1px solid var(--border);
+      color: oklch(86% 0.018 260);
+      font-family: var(--font-display);
+      font-size: 0.98rem;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      white-space: nowrap;
+    }
+    .brand-list li small { display: block; margin-top: 4px; color: var(--muted); font-family: var(--font-mono); font-size: 0.5rem; font-weight: 500; letter-spacing: 0.09em; text-align: center; text-transform: uppercase; }
+    @keyframes badge-pan { to { transform: translateX(-50%); } }
+    section { scroll-margin-top: 90px; }
+    .section { padding: clamp(70px, 9vw, 124px) 0; border-bottom: 1px solid var(--border); }
+    .section-header { display: grid; grid-template-columns: minmax(160px, 0.28fr) 1fr; gap: clamp(22px, 6vw, 90px); align-items: start; margin-bottom: clamp(34px, 5vw, 64px); }
+    .section-index { color: var(--muted); font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em; }
+    .section-heading { max-width: 760px; margin: 0; font-family: var(--font-display); font-size: clamp(2rem, 3.75vw, 3.45rem); font-weight: 600; letter-spacing: -0.045em; line-height: 1.03; text-wrap: balance; }
+    .section-note { max-width: 62ch; margin: 17px 0 0; color: var(--muted); }
+    .authorization { background: oklch(17.2% 0.008 270); }
+    .credential-grid { display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 24px; }
+    .credential-panel, .workflow-panel { border: 1px solid var(--border); background: var(--surface); }
+    .credential-panel { padding: clamp(24px, 4vw, 46px); }
+    .credential-panel h3 { max-width: 23ch; margin: 0 0 16px; font-family: var(--font-display); font-size: clamp(1.6rem, 2.6vw, 2.35rem); letter-spacing: -0.04em; line-height: 1.06; }
+    .credential-panel p { max-width: 59ch; color: var(--muted); }
+    .cert-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin: 30px 0 0; border-top: 1px solid var(--border); border-left: 1px solid var(--border); list-style: none; padding: 0; }
+    .cert-list li { min-height: 76px; padding: 16px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .cert-list strong { display: block; font-family: var(--font-display); font-size: 0.95rem; font-weight: 600; }
+    .cert-list span { display: block; margin-top: 5px; color: var(--muted); font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .workflow-panel { padding: 28px; }
+    .workflow-panel h3 { margin: 0 0 22px; font-family: var(--font-display); font-size: 1.35rem; letter-spacing: -0.03em; }
+    .workflow-row { display: grid; grid-template-columns: 44px 1fr; gap: 15px; padding: 18px 0; border-top: 1px solid var(--border); }
+    .workflow-row:first-of-type { border-top: 0; }
+    .workflow-row span { display: grid; width: 30px; height: 30px; place-items: center; border: 1px solid var(--border); color: var(--muted); font-family: var(--font-mono); font-size: 0.65rem; }
+    .workflow-row strong { display: block; margin-bottom: 4px; font-size: 0.9rem; font-weight: 600; }
+    .workflow-row p { margin: 0; color: var(--muted); font-size: 0.82rem; }
+    .service-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--border); border-left: 1px solid var(--border); }
+    .service-card { min-height: 295px; padding: clamp(22px, 3vw, 36px); border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--bg); transition: background 160ms ease, transform 160ms ease; }
+    .service-card:hover { background: var(--surface); transform: translateY(-3px); }
+    .service-icon { width: 46px; height: 46px; margin-bottom: 42px; color: var(--fg); }
+    .service-icon svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 1.55; }
+    .service-card h3 { margin: 0 0 10px; font-family: var(--font-display); font-size: clamp(1.28rem, 2vw, 1.72rem); letter-spacing: -0.035em; line-height: 1.08; }
+    .service-card p { max-width: 46ch; margin: 0; color: var(--muted); font-size: 0.88rem; }
+    .service-items { display: flex; flex-wrap: wrap; gap: 7px; margin: 23px 0 0; padding: 0; list-style: none; }
+    .service-items li { padding: 5px 7px; border: 1px solid var(--border); color: var(--muted); font-family: var(--font-mono); font-size: 0.57rem; letter-spacing: 0.045em; text-transform: uppercase; }
+    .diagnostic-section { background: oklch(16.8% 0.009 270); }
+    .estimator-layout { display: grid; grid-template-columns: minmax(0, 1.14fr) minmax(310px, 0.86fr); gap: 24px; align-items: stretch; }
+    .estimator, .estimate-result { border: 1px solid var(--border); background: var(--surface); }
+    .estimator { padding: clamp(23px, 4vw, 42px); }
+    .step-label { display: flex; align-items: center; gap: 11px; margin-bottom: 14px; color: var(--muted); font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.1em; text-transform: uppercase; }
+    .step-label b { display: grid; width: 24px; height: 24px; place-items: center; border: 1px solid var(--border); color: var(--fg); font-size: 0.62rem; }
+    .selector-set { margin: 0 0 27px; padding: 0; border: 0; }
+    .selector-set legend { margin-bottom: 13px; font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; letter-spacing: -0.02em; }
+    .selector-row { display: flex; flex-wrap: wrap; gap: 9px; }
+    .selector {
+      min-height: 44px;
+      padding: 0 13px;
+      border: 1px solid var(--border);
+      background: oklch(20.2% 0.012 268);
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 600;
+      transition: background 140ms ease, border-color 140ms ease, color 140ms ease;
+    }
+    .selector:hover { border-color: var(--muted); color: var(--fg); }
+    .selector[aria-pressed="true"] { border-color: var(--fg); background: oklch(30% 0.018 268); color: var(--fg); }
+    .selector:active { transform: translateY(1px); }
+    .diagnostic-details { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; padding-top: 8px; border-top: 1px solid var(--border); }
+    .diagnostic-details label { display: grid; gap: 8px; color: var(--muted); font-family: var(--font-mono); font-size: 0.61rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .diagnostic-details input, .diagnostic-details select, .contact-form input, .contact-form textarea {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid var(--border);
+      border-radius: 0;
+      background: oklch(19% 0.01 270);
+      color: var(--fg);
+      padding: 0 12px;
+    }
+    .diagnostic-details input::placeholder, .contact-form input::placeholder, .contact-form textarea::placeholder { color: oklch(60% 0.02 260); opacity: 1; }
+    .diagnostic-details input:focus-visible, .diagnostic-details select:focus-visible, .contact-form input:focus-visible, .contact-form textarea:focus-visible { border-color: var(--fg); outline-offset: 2px; }
+    .estimate-result { display: grid; align-content: space-between; min-height: 430px; padding: clamp(23px, 4vw, 42px); background: oklch(20% 0.012 268); }
+    .result-kicker { color: var(--muted); font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; }
+    .estimate-result h3 { margin: 17px 0 15px; font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.45rem); letter-spacing: -0.045em; line-height: 1.04; }
+    .estimate-result p { color: var(--muted); }
+    .result-list { margin: 30px 0; padding: 0; list-style: none; }
+    .result-list li { display: grid; grid-template-columns: 12px 1fr; gap: 10px; padding: 11px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.84rem; }
+    .result-list li::before { width: 6px; height: 6px; margin-top: 0.48em; border-radius: 50%; background: var(--fg); content: ""; }
+    .estimate-meta { display: flex; justify-content: space-between; gap: 18px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-family: var(--font-mono); font-size: 0.61rem; letter-spacing: 0.06em; text-transform: uppercase; }
+    .sharpening-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(34px, 7vw, 100px); align-items: center; }
+    .sharpening-copy h2 { margin: 17px 0; font-family: var(--font-display); font-size: clamp(2.3rem, 4.4vw, 4.15rem); letter-spacing: -0.05em; line-height: 1; }
+    .sharpening-copy p { max-width: 54ch; color: var(--muted); }
+    .spec-list { margin: 30px 0 0; padding: 0; border-top: 1px solid var(--border); list-style: none; }
+    .spec-list li { display: grid; grid-template-columns: 1fr auto; gap: 20px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .spec-list span { color: var(--muted); font-size: 0.85rem; }
+    .spec-list strong { font-family: var(--font-mono); font-size: 0.68rem; font-weight: 500; letter-spacing: 0.07em; text-align: right; text-transform: uppercase; }
+    .grind-plate { position: relative; min-height: 460px; border: 1px solid var(--border); background: var(--surface); overflow: hidden; }
+    .grind-plate::before { position: absolute; inset: 0; background-image: repeating-linear-gradient(135deg, transparent 0 22px, oklch(36% 0.02 270 / 0.25) 23px 24px); content: ""; }
+    .blade { position: absolute; top: 50%; left: 50%; width: min(76%, 475px); aspect-ratio: 1; border: clamp(28px, 4.1vw, 48px) solid oklch(63% 0.02 260); border-radius: 50%; transform: translate(-50%, -50%); box-shadow: inset 0 0 0 2px oklch(87% 0.012 270 / 0.55), 0 18px 44px oklch(8% 0.01 270 / 0.46); }
+    .blade::before, .blade::after { position: absolute; top: 50%; left: 50%; content: ""; transform: translate(-50%, -50%); }
+    .blade::before { width: 28%; aspect-ratio: 1; border: 9px solid oklch(22% 0.012 268); border-radius: 50%; background: oklch(38% 0.02 268); box-shadow: inset 0 0 0 1px oklch(72% 0.018 260 / 0.5); }
+    .blade::after { width: 140%; height: 1px; background: oklch(94% 0.01 270 / 0.65); box-shadow: 0 32px 0 oklch(94% 0.01 270 / 0.25), 0 -32px 0 oklch(94% 0.01 270 / 0.25); transform: translate(-50%, -50%) rotate(-28deg); }
+    .blade-tooth { position: absolute; top: 14%; left: 50%; width: 14%; height: 12%; border-top: 12px solid oklch(86% 0.02 260); transform-origin: 50% 312%; }
+    .blade-tooth:nth-child(2) { transform: rotate(45deg); }
+    .blade-tooth:nth-child(3) { transform: rotate(90deg); }
+    .blade-tooth:nth-child(4) { transform: rotate(135deg); }
+    .blade-tooth:nth-child(5) { transform: rotate(180deg); }
+    .blade-tooth:nth-child(6) { transform: rotate(225deg); }
+    .blade-tooth:nth-child(7) { transform: rotate(270deg); }
+    .blade-tooth:nth-child(8) { transform: rotate(315deg); }
+    .plate-label { position: absolute; z-index: 2; right: 18px; bottom: 18px; max-width: 205px; padding: 12px; border: 1px solid var(--border); background: oklch(18.7% 0.0063 271.07 / 0.94); box-shadow: var(--shadow); }
+    .plate-label strong { display: block; font-family: var(--font-mono); font-size: 0.65rem; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; }
+    .plate-label span { display: block; margin-top: 5px; color: var(--muted); font-size: 0.73rem; line-height: 1.35; }
+    .fleet { background: oklch(16.8% 0.009 270); }
+    .fleet-layout { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 24px; }
+    .fleet-intro { padding-right: clamp(0px, 4vw, 48px); }
+    .fleet-intro h2 { margin: 17px 0; font-family: var(--font-display); font-size: clamp(2.1rem, 4vw, 3.55rem); letter-spacing: -0.05em; line-height: 1.02; }
+    .fleet-intro p { max-width: 57ch; color: var(--muted); }
+    .fleet-steps { display: grid; margin-top: 36px; border-top: 1px solid var(--border); }
+    .fleet-step { display: grid; grid-template-columns: 36px 1fr; gap: 15px; padding: 17px 0; border-bottom: 1px solid var(--border); }
+    .fleet-step span { color: var(--muted); font-family: var(--font-mono); font-size: 0.67rem; letter-spacing: 0.06em; }
+    .fleet-step strong { display: block; font-size: 0.9rem; }
+    .fleet-step p { margin: 4px 0 0; font-size: 0.82rem; }
+    .fleet-callout { display: grid; align-content: space-between; min-height: 420px; padding: clamp(24px, 4vw, 42px); border: 1px solid var(--border); background: var(--surface); }
+    .fleet-callout h3 { max-width: 14ch; margin: 0; font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.6rem); letter-spacing: -0.045em; line-height: 1.04; }
+    .fleet-callout p { color: var(--muted); }
+    .fleet-callout .secondary-button { width: max-content; }
+    .proof-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(310px, 0.85fr); gap: 24px; }
+    .review-panel, .proof-note { border: 1px solid var(--border); background: var(--surface); }
+    .review-panel { padding: clamp(24px, 4vw, 46px); }
+    .review-stack { display: grid; gap: 22px; }
+    .review-panel blockquote { max-width: 36ch; margin: 0; font-family: var(--font-display); font-size: clamp(1.55rem, 2.7vw, 2.35rem); font-weight: 500; letter-spacing: -0.04em; line-height: 1.13; }
+    .review-panel .review-mini { max-width: 49ch; color: var(--muted); font-family: var(--font-body); font-size: 0.95rem; letter-spacing: 0; line-height: 1.55; }
+    .review-divider { width: 44px; border-top: 1px solid var(--border); }
+    .review-meta { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 28px; color: var(--muted); font-family: var(--font-mono); font-size: 0.63rem; letter-spacing: 0.07em; text-transform: uppercase; }
+    .proof-note { display: grid; align-content: space-between; padding: clamp(24px, 4vw, 40px); background: oklch(20% 0.012 268); }
+    .proof-note h3 { margin: 0 0 12px; font-family: var(--font-display); font-size: 1.55rem; letter-spacing: -0.035em; line-height: 1.07; }
+    .proof-note p { color: var(--muted); font-size: 0.9rem; }
+    .proof-note a { font-size: 0.84rem; }
+    .location { border-bottom: 0; }
+    .location-grid { display: grid; grid-template-columns: 1.02fr 0.98fr; gap: 24px; }
+    .location-copy { padding: clamp(24px, 4vw, 44px); border: 1px solid var(--border); background: var(--surface); }
+    .location-copy h2 { margin: 17px 0; font-family: var(--font-display); font-size: clamp(2rem, 3.6vw, 3.1rem); letter-spacing: -0.045em; line-height: 1.03; }
+    .location-copy p { max-width: 44ch; color: var(--muted); }
+    .address-block { margin: 27px 0; padding: 22px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .address-block address { margin-bottom: 15px; color: var(--fg); font-style: normal; line-height: 1.65; }
+    .hours { margin: 0; padding: 0; list-style: none; }
+    .hours li { display: flex; justify-content: space-between; gap: 14px; padding: 7px 0; color: var(--muted); font-size: 0.82rem; }
+    .hours strong { color: var(--fg); font-weight: 600; }
+    .bring-list { margin: 0 0 28px; padding: 0; list-style: none; }
+    .bring-list li { display: grid; grid-template-columns: 28px 1fr; gap: 10px; padding: 8px 0; color: var(--muted); font-size: 0.86rem; }
+    .bring-list span { color: var(--fg); font-family: var(--font-mono); font-size: 0.66rem; }
+    .map-wrap { min-height: 570px; border: 1px solid var(--border); background: var(--surface); }
+    .map-wrap iframe { display: block; width: 100%; height: 100%; min-height: 570px; border: 0; filter: grayscale(1) contrast(1.1) invert(0.88) hue-rotate(160deg) saturate(0.4); }
+    .site-footer { border-top: 1px solid var(--border); background: oklch(14.5% 0.007 270); }
+    .footer-inner { display: grid; grid-template-columns: 1.2fr repeat(3, 0.7fr); gap: 32px; padding: 58px 0 33px; }
+    .footer-lead p { max-width: 30ch; margin-top: 14px; color: var(--muted); font-size: 0.85rem; }
+    .footer-col h2 { margin: 0 0 14px; color: var(--muted); font-family: var(--font-mono); font-size: 0.61rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; }
+    .footer-col ul { margin: 0; padding: 0; list-style: none; }
+    .footer-col li { margin: 7px 0; color: var(--muted); font-size: 0.8rem; }
+    .footer-col a:hover { color: var(--fg); }
+    .footer-base { display: flex; justify-content: space-between; gap: 20px; padding: 16px 0 26px; border-top: 1px solid var(--border); color: var(--muted); font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.06em; text-transform: uppercase; }
+    dialog {
+      width: min(620px, calc(100% - 32px));
+      max-height: calc(100dvh - 32px);
+      padding: 0;
+      border: 1px solid var(--border);
+      border-radius: 0;
+      background: var(--surface);
+      color: var(--fg);
+      box-shadow: 0 30px 80px oklch(8% 0.01 270 / 0.72);
+    }
+    dialog::backdrop { background: oklch(8% 0.01 270 / 0.78); }
+    .dialog-inner { padding: clamp(23px, 5vw, 42px); }
+    .dialog-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; padding-bottom: 22px; border-bottom: 1px solid var(--border); }
+    .dialog-header h2 { margin: 5px 0 0; font-family: var(--font-display); font-size: clamp(1.7rem, 4vw, 2.4rem); letter-spacing: -0.04em; line-height: 1.04; }
+    .dialog-close { display: grid; width: 44px; height: 44px; flex: 0 0 auto; place-items: center; padding: 0; border: 1px solid var(--border); background: transparent; color: var(--fg); }
+    .dialog-close:hover { background: oklch(28% 0.016 268); }
+    .dialog-close svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+    .contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 25px; }
+    .contact-form label { display: grid; gap: 7px; color: var(--muted); font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; }
+    .contact-form .full { grid-column: 1 / -1; }
+    .contact-form textarea { min-height: 112px; padding: 12px; resize: vertical; }
+    .dialog-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; grid-column: 1 / -1; padding-top: 8px; }
+    .form-notice { min-height: 1.5em; margin: 0; color: var(--muted); font-size: 0.76rem; }
+    @media (max-width: 1020px) {
+      .nav { grid-template-columns: auto auto; justify-content: space-between; }
+      .nav-links { display: none; }
+      .hero-grid, .sharpening-grid, .fleet-layout, .location-grid { grid-template-columns: 1fr; }
+      .hero-grid { gap: 44px; }
+      .diagnostic-panel { max-width: 650px; }
+      .credential-grid, .estimator-layout, .proof-grid { grid-template-columns: 1fr; }
+      .location-copy { order: 2; }
+      .map-wrap, .map-wrap iframe { min-height: 420px; }
+      .footer-inner { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 700px) {
+      :root { --container: min(100% - 32px, 1180px); }
+      .utility-inner { min-height: 44px; font-size: 0.61rem; }
+      .utility .open-status { max-width: 28ch; }
+      .utility a { font-size: 0.66rem; white-space: nowrap; }
+      .nav { min-height: 68px; gap: 16px; }
+      .nav .secondary-button { min-height: 44px; padding: 0 12px; font-size: 0.72rem; }
+      .wordmark strong { font-size: 0.98rem; }
+      h1 { font-size: clamp(2.5rem, 13vw, 4.25rem); line-height: 1.01; }
+      .hero { padding-top: 56px; }
+      .hero-actions { align-items: stretch; }
+      .hero-actions .primary-button { flex: 1 1 185px; }
+      .hero-hotline { padding-left: 0; border-left: 0; }
+      .bench-tags { margin-top: 32px; }
+      .diagnostic-panel { padding: 20px; }
+      .preview-step { grid-template-columns: 24px 1fr; }
+      .step-value { grid-column: 2; text-align: left; }
+      .brand-list li { min-width: 156px; min-height: 64px; padding: 8px 19px; font-size: 0.86rem; }
+      .section-header { grid-template-columns: 1fr; gap: 14px; }
+      .cert-list, .service-grid { grid-template-columns: 1fr; }
+      .service-card { min-height: 0; }
+      .service-icon { margin-bottom: 26px; }
+      .diagnostic-details, .contact-form { grid-template-columns: 1fr; }
+      .estimate-result { min-height: 370px; }
+      .grind-plate { min-height: 370px; }
+      .blade { width: min(75%, 340px); }
+      .fleet-callout { min-height: 330px; }
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 28px 20px; padding-top: 46px; }
+      .footer-lead { grid-column: 1 / -1; }
+      .footer-base { flex-direction: column; }
+      .dialog-actions { align-items: stretch; }
+      .dialog-actions .primary-button { width: 100%; }
+    }
+    @media (max-width: 390px) {
+      .utility-inner { gap: 8px; }
+      .utility a { font-size: 0.6rem; }
+      .nav .secondary-button { max-width: 143px; text-align: center; line-height: 1.1; }
+      .hero-actions .secondary-button { flex: 1 1 100%; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .footer-lead { grid-column: auto; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+      .brand-track { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="utility" data-od-id="top-status">
+      <div class="container utility-inner">
+        <span class="open-status"><span class="status-dot" aria-hidden="true"></span>Workshop open: Monâ€“Fri 7AMâ€“5PM Â· Sat 8AMâ€“3PM</span>
+        <a href="tel:+16045033632" data-od-id="hotline-link">Hotline: (604) 503-3632</a>
+      </div>
+    </div>
+    <header class="site-header" data-od-id="main-navigation">
+      <nav class="container nav" aria-label="Primary navigation">
+        <a class="wordmark" href="#top" data-od-id="wordmark">
+          <strong>NEWTON / TOOL</strong>
+          <span>Repair Ltd. Â· Surrey BC</span>
+        </a>
+        <div class="nav-links">
+          <a href="#services" data-od-id="nav-services">Services</a>
+          <a href="#authorized" data-od-id="nav-authorized">Authorized Brands</a>
+          <a href="#sharpening" data-od-id="nav-sharpening">Sharpening</a>
+          <a href="#fleet" data-od-id="nav-fleet">Fleet Care</a>
+          <a href="#diagnostics" data-od-id="nav-diagnostics">Diagnostics</a>
+          <a href="#location" data-od-id="nav-location">Location</a>
+        </div>
+        <button class="secondary-button" type="button" data-open-quote data-od-id="nav-quote-cta">Book Drop-Off / Quote</button>
+      </nav>
+    </header>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-heading" data-od-id="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow" data-od-id="hero-eyebrow">Surrey workshop / service desk</span>
+            <h1 id="hero-heading" data-od-id="hero-heading">Zero downtime for Surrey trades.</h1>
+            <p class="hero-copy">Factory-authorized power tool repair, pneumatic overhaul, and precision sharpening for crews that need their kit back on the jobâ€”not sitting on a shelf.</p>
+            <div class="hero-actions">
+              <button class="primary-button" type="button" data-open-quote data-od-id="hero-quote-cta">Book Drop-Off / Quote</button>
+              <a class="secondary-button" href="https://www.google.com/maps/dir/?api=1&amp;destination=114-7533+135th+Street,+Surrey,+BC+V3W+0N6" target="_blank" rel="noopener" data-od-id="hero-directions-cta">Get directions</a>
+              <div class="hero-hotline">
+                <span>Call the service desk</span>
+                <a href="tel:+16045033632" data-od-id="hero-phone-link">(604) 503-3632</a>
+              </div>
+            </div>
+            <div class="bench-tags" aria-label="Service promises">
+              <span class="bench-tag">Rapid drop-off</span>
+              <span class="bench-tag">OEM parts workflow</span>
+              <span class="bench-tag">Metro Vancouver trades</span>
+            </div>
+          </div>
+          <aside class="diagnostic-panel" aria-labelledby="quick-diagnostic-heading" data-od-id="quick-diagnostic-preview">
+            <div class="panel-topline">
+              <span>Bench intake / 01</span>
+              <strong>Quick diagnostic</strong>
+            </div>
+            <h2 id="quick-diagnostic-heading" data-od-id="quick-diagnostic-heading">Tell us what stopped working.</h2>
+            <p>Start the intake now. The service desk will use the same notes when you call or arrive at the counter.</p>
+            <div class="preview-steps" aria-label="Diagnostic preview steps">
+              <div class="preview-step"><span class="step-no">01</span><strong>Choose equipment</strong><span class="step-value">Cordless / Air / Saw</span></div>
+              <div class="preview-step"><span class="step-no">02</span><strong>Name the symptom</strong><span class="step-value">Power / Pressure / Cut</span></div>
+              <div class="preview-step"><span class="step-no">03</span><strong>Prepare drop-off</strong><span class="step-value">Tool / serial / battery</span></div>
+            </div>
+            <div class="panel-footer">
+              <small>No invented time promise. Bench timing is confirmed after condition assessment.</small>
+              <a class="text-button" href="#diagnostics" data-od-id="quick-diagnostic-link">Start check</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section class="brand-tape" aria-label="Authorized factory service partners" data-od-id="authorized-brand-marquee">
+        <div class="brand-track">
+          <ul class="brand-list">
+            <li>DeWalt<small>Factory direct service</small></li>
+            <li>Metabo HPT<small>Factory direct service</small></li>
+            <li>Rolair Systems<small>Factory direct service</small></li>
+            <li>Porter-Cable<small>Factory direct service</small></li>
+            <li>Paslode<small>Factory direct service</small></li>
+            <li>Flex Power Tools<small>Factory direct service</small></li>
+          </ul>
+          <ul class="brand-list" aria-hidden="true">
+            <li>DeWalt<small>Factory direct service</small></li>
+            <li>Metabo HPT<small>Factory direct service</small></li>
+            <li>Rolair Systems<small>Factory direct service</small></li>
+            <li>Porter-Cable<small>Factory direct service</small></li>
+            <li>Paslode<small>Factory direct service</small></li>
+            <li>Flex Power Tools<small>Factory direct service</small></li>
+          </ul>
+        </div>
+      </section>
+      <section class="section authorization" id="authorized" aria-labelledby="authorized-heading" data-od-id="authorized-certification">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-index">01 / Authorization</span>
+            <div>
+              <h2 class="section-heading" id="authorized-heading" data-od-id="authorized-heading">The right bench path for a warranty claimâ€”or a hard-working tool past warranty.</h2>
+              <p class="section-note">Bring the tool and proof of purchase for a warranty assessment. For non-warranty repairs, we inspect the condition, identify the fault, and discuss the repair route before work begins.</p>
+            </div>
+          </div>
+          <div class="credential-grid">
+            <article class="credential-panel" data-od-id="oem-parts-guarantee">
+              <h3 data-od-id="oem-parts-heading">Authorized partner workflow with genuine OEM parts where the repair requires them.</h3>
+              <p>Newton Tool Repair is set up to route eligible factory-authorized service correctly, with a clear intake process for the brands we support directly.</p>
+              <ul class="cert-list" aria-label="Authorized brand services">
+                <li><strong>DeWalt</strong><span>Direct service partner</span></li>
+                <li><strong>Metabo HPT</strong><span>Direct service partner</span></li>
+                <li><strong>Rolair Systems</strong><span>Direct service partner</span></li>
+                <li><strong>Porter-Cable</strong><span>Direct service partner</span></li>
+                <li><strong>Paslode</strong><span>Direct service partner</span></li>
+                <li><strong>Flex</strong><span>Direct service partner</span></li>
+              </ul>
+            </article>
+            <aside class="workflow-panel" data-od-id="warranty-workflow">
+              <h3 data-od-id="warranty-workflow-heading">Service path at the counter</h3>
+              <div class="workflow-row"><span>01</span><div><strong>Identify the tool</strong><p>Model and serial number tell the desk how to route the repair.</p></div></div>
+              <div class="workflow-row"><span>02</span><div><strong>Check coverage</strong><p>Warranty paperwork is reviewed before warranty processing begins.</p></div></div>
+              <div class="workflow-row"><span>03</span><div><strong>Bench assessment</strong><p>Non-warranty work is assessed for fault, condition, and parts availability.</p></div></div>
+              <div class="workflow-row"><span>04</span><div><strong>Repair approval</strong><p>The next repair step is confirmed before paid work proceeds.</p></div></div>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="services" aria-labelledby="services-heading" data-od-id="services">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-index">02 / Technical services</span>
+            <div>
+              <h2 class="section-heading" id="services-heading" data-od-id="services-heading">One workshop for the tools that move a crew forward.</h2>
+              <p class="section-note">Bring the equipment that is slowing down a job. The service desk will get the essential problem, model details, and power source into the bench intake.</p>
+            </div>
+          </div>
+          <div class="service-grid">
+            <article class="service-card" data-od-id="service-card-electric-cordless">
+              <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 18h21l6 6-7 7H17l-9-9Z"/><path d="M35 24h7M11 18l-4-4m16 17-5 10h11l2-10"/></svg></div>
+              <h3 data-od-id="service-electric-heading">Electric &amp; cordless power tools</h3>
+              <p>Power delivery, switches, housings, chucks, controls, and the working components that keep a tool in rotation.</p>
+              <ul class="service-items"><li>Drills</li><li>Impacts</li><li>Table saws</li><li>Mitre saws</li><li>Rotary hammers</li></ul>
+            </article>
+            <article class="service-card" data-od-id="service-card-pneumatic-air">
+              <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 30h12l5-8h11l4 8v7H8Z"/><path d="M15 30v-9h10M31 17v5M13 37v4m22-4v4M9 18h10"/></svg></div>
+              <h3 data-od-id="service-pneumatic-heading">Pneumatic &amp; air systems</h3>
+              <p>Air leaks, seals, pressure behavior, feed issues, and the fastener systems that cannot afford to misfire on site.</p>
+              <ul class="service-items"><li>Framing nailers</li><li>Finish nailers</li><li>Compressors</li><li>Regulators</li><li>Air lines</li></ul>
+            </article>
+            <article class="service-card" data-od-id="service-card-industrial-motors">
+              <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="8" y="15" width="25" height="18"/><path d="M33 20h7v8h-7M14 15V9m12 6V9M13 33v7m14-7v4M18 21h5m-5 6h9"/></svg></div>
+              <h3 data-od-id="service-industrial-heading">Industrial equipment &amp; motors</h3>
+              <p>Heavy-duty tools and mobile equipment brought in for fault isolation, repair discussion, and serviceable-component work.</p>
+              <ul class="service-items"><li>Generators</li><li>Pressure washers</li><li>Demo hammers</li><li>Electric motors</li></ul>
+            </article>
+            <article class="service-card" data-od-id="service-card-precision-sharpening">
+              <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="4"/><path d="m24 10 4 5m10 9-6 2m-8 12-2-6M10 24l6-2"/></svg></div>
+              <h3 data-od-id="service-sharpening-heading">Custom carbide &amp; blade sharpening</h3>
+              <p>Condition-led grinding for cutting edges where runout, tooth profile, and finish quality show up in the finished work.</p>
+              <ul class="service-items"><li>Saw blades</li><li>Band saws</li><li>Dado sets</li><li>Planer knives</li><li>Router bits</li></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section diagnostic-section" id="diagnostics" aria-labelledby="diagnostic-heading" data-od-id="repair-estimator">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-index">03 / Diagnostic guide</span>
+            <div>
+              <h2 class="section-heading" id="diagnostic-heading" data-od-id="diagnostic-heading">Start with the fault. Arrive with a better drop-off.</h2>
+              <p class="section-note">This is a counter-intake guide, not a repair quote. Select the category and the symptom so the desk knows what to ask for when the tool reaches the bench.</p>
+            </div>
+          </div>
+          <div class="estimator-layout">
+            <form class="estimator" aria-label="Repair diagnostic selector" data-od-id="diagnostic-selector">
+              <fieldset class="selector-set">
+                <div class="step-label"><b>01</b> Equipment category</div>
+                <legend>What are you bringing in?</legend>
+                <div class="selector-row" role="group" aria-label="Equipment category">
+                  <button class="selector" type="button" data-category="cordless" aria-pressed="true" data-od-id="category-cordless">Cordless</button>
+                  <button class="selector" type="button" data-category="pneumatic" aria-pressed="false" data-od-id="category-pneumatic">Pneumatic</button>
+                  <button class="selector" type="button" data-category="saws" aria-pressed="false" data-od-id="category-heavy-saws">Heavy saws</button>
+                  <button class="selector" type="button" data-category="sharpening" aria-pressed="false" data-od-id="category-sharpening">Sharpening</button>
+                </div>
+              </fieldset>
+              <fieldset class="selector-set">
+                <div class="step-label"><b>02</b> Primary symptom</div>
+                <legend>What is it doing?</legend>
+                <div class="selector-row" role="group" aria-label="Primary tool symptom">
+                  <button class="selector" type="button" data-symptom="spark" aria-pressed="false" data-od-id="symptom-motor-spark">Motor sparks</button>
+                  <button class="selector" type="button" data-symptom="pressure" aria-pressed="false" data-od-id="symptom-loss-pressure">Loss of pressure</button>
+                  <button class="selector" type="button" data-symptom="drift" aria-pressed="false" data-od-id="symptom-blade-drift">Blade drift</button>
+                  <button class="selector" type="button" data-symptom="power" aria-pressed="true" data-od-id="symptom-wont-turn-on">Won't turn on</button>
+                </div>
+              </fieldset>
+              <div class="diagnostic-details">
+                <label for="tool-model">Model / brand
+                  <input id="tool-model" name="tool-model" placeholder="e.g. DCD996" data-od-id="diagnostic-model-input">
+                </label>
+                <label for="work-urgency">Job impact
+                  <select id="work-urgency" name="work-urgency" data-od-id="diagnostic-job-impact-select">
+                    <option>One tool in rotation</option>
+                    <option>Holding up a crew</option>
+                    <option>Preventive maintenance</option>
+                  </select>
+                </label>
+              </div>
+            </form>
+            <aside class="estimate-result" aria-live="polite" data-od-id="diagnostic-result">
+              <div>
+                <span class="result-kicker">Counter-ready note</span>
+                <h3 id="result-title" data-od-id="diagnostic-result-heading">Cordless tool / power issue</h3>
+                <p id="result-description">Bring the tool, the battery that was in use, and any charger that may be involved. The counter can record the failure behavior before it goes to assessment.</p>
+                <ul class="result-list" id="result-list">
+                  <li>Tool body and the battery used when the fault appeared.</li>
+                  <li>Model and serial number, if still readable.</li>
+                  <li>A short note on what happened immediately before it stopped.</li>
+                </ul>
+              </div>
+              <div class="estimate-meta"><span id="result-time">Typical turnaround confirmed after assessment</span><span id="result-path">Power-path assessment</span></div>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="sharpening" aria-labelledby="sharpening-heading" data-od-id="sharpening-workshop">
+        <div class="container sharpening-grid">
+          <div class="sharpening-copy">
+            <span class="eyebrow">Precision grinding room</span>
+            <h2 id="sharpening-heading" data-od-id="sharpening-heading">Keep the blade. Restore the cut.</h2>
+            <p>Every blade is inspected before grinding. We assess tooth condition, plate damage, and whether the tool is a sensible candidate for sharpeningâ€”so a replacement decision is based on the cutting edge, not guesswork.</p>
+            <ul class="spec-list" aria-label="Blade sharpening capabilities">
+              <li><span>Micro-finish carbide grinding</span><strong>Tooth-by-tooth assessment</strong></li>
+              <li><span>Custom tooth profile work</span><strong>Cut-specific geometry</strong></li>
+              <li><span>Condition-led recommendation</span><strong>Repair vs. replace</strong></li>
+            </ul>
+          </div>
+          <figure class="grind-plate" data-od-id="blade-grinding-visual">
+            <div class="blade" aria-hidden="true">
+              <span class="blade-tooth"></span><span class="blade-tooth"></span><span class="blade-tooth"></span><span class="blade-tooth"></span>
+              <span class="blade-tooth"></span><span class="blade-tooth"></span><span class="blade-tooth"></span><span class="blade-tooth"></span>
+            </div>
+            <figcaption class="plate-label"><strong>Grinding note / 07</strong><span>Measured geometry, clean plate support, and a finish suited to the job the blade returns to.</span></figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="section fleet" id="fleet" aria-labelledby="fleet-heading" data-od-id="fleet-care">
+        <div class="container fleet-layout">
+          <div class="fleet-intro">
+            <span class="eyebrow">Commercial service program</span>
+            <h2 id="fleet-heading" data-od-id="fleet-heading">A priority bench queue for the crews that cannot lose a day.</h2>
+            <p>For framing outfits, commercial drywall teams, builders, and shop-floor operators who have recurring repair and maintenance work, Newton can coordinate a commercial intake path around the equipment actually in rotation.</p>
+            <div class="fleet-steps">
+              <div class="fleet-step"><span>01</span><div><strong>Build the equipment list</strong><p>Record the tools and consumables your team relies on so repeat intake is faster.</p></div></div>
+              <div class="fleet-step"><span>02</span><div><strong>Plan the counter handoff</strong><p>Group routine maintenance and repair candidates around the work your crew is running.</p></div></div>
+              <div class="fleet-step"><span>03</span><div><strong>Use the priority bench queue</strong><p>Discuss current commercial-service availability with the service desk before the next critical handoff.</p></div></div>
+            </div>
+          </div>
+          <aside class="fleet-callout" data-od-id="fleet-inquiry">
+            <div>
+              <span class="mono">Commercial / fleet care</span>
+              <h3 data-od-id="fleet-callout-heading">Make tool maintenance a planned part of the work.</h3>
+            </div>
+            <div>
+              <p>Call the shop to discuss recurring maintenance, grouped drop-offs, and the equipment your crew relies on most.</p>
+              <a class="secondary-button" href="tel:+16045033632" data-od-id="fleet-call-cta">Talk to the service desk</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section class="section" aria-labelledby="proof-heading" data-od-id="local-proof">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-index">04 / Local proof</span>
+            <div>
+              <h2 class="section-heading" id="proof-heading" data-od-id="proof-heading">The standard is simple: clear advice, fair repair discussion, work that gets back on site.</h2>
+              <p class="section-note">Published review language is included only where the source can be verified. Ratings and timing should always be reconfirmed before a live site goes public.</p>
+            </div>
+          </div>
+          <div class="proof-grid">
+            <figure class="review-panel" data-od-id="verified-review">
+              <div class="review-stack">
+                <blockquote>â€œThey repaired my nailer right away at a very reasonable cost.â€</blockquote>
+                <div class="review-divider" aria-hidden="true"></div>
+                <blockquote class="review-mini">â€œProfessional staff know their roleâ€¦ [they] fixed my Makita Mac5200 right away at a very low price.â€</blockquote>
+              </div>
+              <figcaption class="review-meta"><span>Vinitca S. Â· Paramjeet D.</span><span>Published local reviews</span><a href="https://www.yellowpages.ca/bus/British-Columbia/Surrey/Newton-Tool-Repair/8214706.html" target="_blank" rel="noopener">Source: YellowPages</a><a href="https://reviews.birdeye.com/newton-tool-repair-166996158562015" target="_blank" rel="noopener">Source: Birdeye</a></figcaption>
+            </figure>
+            <aside class="proof-note" data-od-id="review-disclosure">
+              <div>
+                <span class="mono">Review practice</span>
+                <h3 data-od-id="review-disclosure-heading">Real local proof deserves real attribution.</h3>
+                <p>Use approved Google Business Profile excerpts in this area as they are verified. Do not fill this block with anonymous claims or unconfirmed star counts.</p>
+              </div>
+              <a class="text-button" href="https://reviews.birdeye.com/newton-tool-repair-166996158562015" target="_blank" rel="noopener" data-od-id="reviews-link">See available reviews</a>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <section class="section location" id="location" aria-labelledby="location-heading" data-od-id="location-hours">
+        <div class="container location-grid">
+          <div class="location-copy">
+            <span class="eyebrow">Drop-off hub / Surrey</span>
+            <h2 id="location-heading" data-od-id="location-heading">Bring the tool, the power source, and the details that tell the bench what happened.</h2>
+            <p>For the fastest counter intake, have the fault ready in plain language and bring any battery, charger, accessory, or blade that relates directly to it.</p>
+            <div class="address-block">
+              <address>Newton Tool Repair Ltd.<br>#114 â€“ 7533 135th Street<br>Surrey, BC V3W 0N6</address>
+              <ul class="hours" aria-label="Opening hours">
+                <li><strong>Mondayâ€“Friday</strong><span>7:00 AM â€“ 5:00 PM</span></li>
+                <li><strong>Saturday</strong><span>8:00 AM â€“ 3:00 PM</span></li>
+                <li><strong>Sunday</strong><span>Closed</span></li>
+              </ul>
+            </div>
+            <ul class="bring-list" aria-label="Pre-drop-off checklist">
+              <li><span>01</span><div><strong>Tool body</strong><br>Bring the exact tool that is failing.</div></li>
+              <li><span>02</span><div><strong>Battery / charger / air setup</strong><br>Include the power source when the symptom depends on it.</div></li>
+              <li><span>03</span><div><strong>Model and serial details</strong><br>A photo works if the plate is hard to read at the counter.</div></li>
+            </ul>
+            <button class="primary-button" type="button" data-open-quote data-od-id="location-quote-cta">Start a repair request</button>
+          </div>
+          <div class="map-wrap" data-od-id="map-embed">
+            <iframe title="Map to Newton Tool Repair in Surrey" loading="lazy" src="https://www.google.com/maps?q=114-7533+135th+Street,+Surrey,+BC+V3W+0N6&amp;output=embed"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" data-od-id="footer">
+      <div class="container footer-inner">
+        <div class="footer-lead">
+          <a class="wordmark" href="#top" data-od-id="footer-wordmark"><strong>NEWTON / TOOL</strong><span>Repair Ltd. Â· Surrey BC</span></a>
+          <p>Factory-authorized power tool repair, pneumatic overhaul, and precision sharpening for Metro Vancouver trades.</p>
+        </div>
+        <div class="footer-col">
+          <h2 data-od-id="footer-contact-heading">Contact</h2>
+          <ul>
+            <li><a href="tel:+16045033632" data-od-id="footer-phone">(604) 503-3632</a></li>
+            <li><a href="mailto:gagan@newtontool.ca" data-od-id="footer-email">gagan@newtontool.ca</a></li>
+            <li><a href="https://www.google.com/maps/dir/?api=1&amp;destination=114-7533+135th+Street,+Surrey,+BC+V3W+0N6" target="_blank" rel="noopener" data-od-id="footer-directions">Get directions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 data-od-id="footer-hours-heading">Hours</h2>
+          <ul><li>Monâ€“Fri Â· 7AMâ€“5PM</li><li>Saturday Â· 8AMâ€“3PM</li><li>Sunday Â· Closed</li></ul>
+        </div>
+        <div class="footer-col">
+          <h2 data-od-id="footer-authorized-heading">Authorized service</h2>
+          <ul><li>DeWalt</li><li>Metabo HPT</li><li>Rolair Â· Paslode</li><li>Porter-Cable Â· Flex</li></ul>
+        </div>
+      </div>
+      <div class="container footer-base"><span>Â© 2026 Newton Tool Repair Ltd.</span><span>Surrey, British Columbia</span></div>
+    </footer>
+  </div>
+  <dialog id="quote-modal" aria-labelledby="quote-title" data-od-id="repair-quote-dialog">
+    <div class="dialog-inner">
+      <div class="dialog-header">
+        <div><span class="mono">Service desk / quote request</span><h2 id="quote-title" data-od-id="quote-dialog-heading">Send the bench a clear starting note.</h2></div>
+        <button class="dialog-close" type="button" aria-label="Close repair request form" data-close-quote data-od-id="close-quote-dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button>
+      </div>
+      <form id="quote-form" class="contact-form" data-od-id="repair-quote-form">
+        <label for="contact-name">Your name
+          <input id="contact-name" name="name" autocomplete="name" required data-od-id="quote-name-input">
+        </label>
+        <label for="contact-phone">Phone number
+          <input id="contact-phone" name="phone" autocomplete="tel" inputmode="tel" required data-od-id="quote-phone-input">
+        </label>
+        <label class="full" for="contact-tool">Tool / brand / model
+          <input id="contact-tool" name="tool" required placeholder="e.g. Paslode framing nailer / model if known" data-od-id="quote-tool-input">
+        </label>
+        <label class="full" for="contact-issue">What happened?
+          <textarea id="contact-issue" name="issue" required placeholder="Describe the symptom, when it started, and whether a battery, charger, blade, or air supply was involved." data-od-id="quote-issue-input"></textarea>
+        </label>
+        <div class="dialog-actions">
+          <p class="form-notice" id="quote-notice" aria-live="polite">Submitting opens a prefilled email to the service desk.</p>
+          <button class="primary-button" type="submit" data-od-id="submit-quote-request">Email repair request</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+  <script>
+    (function () {
+      var categoryData = {
+        cordless: {
+          title: "Cordless tool / power issue",
+          description: "Bring the tool, the battery that was in use, and any charger that may be involved. The counter can record the failure behavior before it goes to assessment.",
+          items: ["Tool body and the battery used when the fault appeared.", "Model and serial number, if still readable.", "A short note on what happened immediately before it stopped."],
+          path: "Power-path assessment"
+        },
+        pneumatic: {
+          title: "Pneumatic tool / air-path issue",
+          description: "Bring the tool and identify the air supply behavior. Pressure, seal, feed, and trigger notes help the counter capture the right bench question.",
+          items: ["Tool body and the fitting or hose information that relates to the symptom.", "A note on whether the issue is pressure loss, feeding, or firing behavior.", "Model and serial number for parts and service routing."],
+          path: "Air-path assessment"
+        },
+        saws: {
+          title: "Heavy saw / cutting-path issue",
+          description: "Bring the saw and explain the behavior under load. If the issue relates to a blade, bring the blade only when it is safe to transport.",
+          items: ["Saw model and the blade or accessory involved, where relevant.", "A note on cut quality, vibration, binding, or power behavior.", "The serial plate or a clear photo of it."],
+          path: "Cutting-path assessment"
+        },
+        sharpening: {
+          title: "Blade / edge assessment",
+          description: "Bring the blade or cutting edge cleanly packaged. The grinding room will assess tooth condition, plate damage, and whether sharpening is appropriate.",
+          items: ["Blade or cutting tool, safely protected for drop-off.", "The material and cut quality you need it to return to.", "Any known tooth damage, pitch buildup, or plate concern."],
+          path: "Grinding-room assessment"
+        }
+      };
+      var symptomNames = {
+        spark: "motor spark",
+        pressure: "loss of pressure",
+        drift: "blade drift",
+        power: "won't turn on"
+      };
+      var activeCategory = "cordless";
+      var activeSymptom = "power";
+      var categoryButtons = document.querySelectorAll("[data-category]");
+      var symptomButtons = document.querySelectorAll("[data-symptom]");
+      var resultTitle = document.getElementById("result-title");
+      var resultDescription = document.getElementById("result-description");
+      var resultList = document.getElementById("result-list");
+      var resultPath = document.getElementById("result-path");
+      function renderDiagnostic() {
+        var selected = categoryData[activeCategory];
+        resultTitle.textContent = selected.title + " / " + symptomNames[activeSymptom];
+        resultDescription.textContent = selected.description;
+        resultPath.textContent = selected.path;
+        resultList.replaceChildren();
+        selected.items.forEach(function (item) {
+          var node = document.createElement("li");
+          node.textContent = item;
+          resultList.appendChild(node);
+        });
+        categoryButtons.forEach(function (button) {
+          button.setAttribute("aria-pressed", String(button.dataset.category === activeCategory));
+        });
+        symptomButtons.forEach(function (button) {
+          button.setAttribute("aria-pressed", String(button.dataset.symptom === activeSymptom));
+        });
+      }
+      categoryButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          activeCategory = button.dataset.category;
+          renderDiagnostic();
+        });
+      });
+      symptomButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          activeSymptom = button.dataset.symptom;
+          renderDiagnostic();
+        });
+      });
+      var quoteDialog = document.getElementById("quote-modal");
+      var quoteForm = document.getElementById("quote-form");
+      var quoteNotice = document.getElementById("quote-notice");
+      var lastTrigger = null;
+      function openQuote(trigger) {
+        lastTrigger = trigger || document.activeElement;
+        if (typeof quoteDialog.showModal === "function") {
+          quoteDialog.showModal();
+          window.setTimeout(function () { document.getElementById("contact-name").focus(); }, 20);
+        } else {
+          quoteDialog.setAttribute("open", "");
+        }
+      }
+      function closeQuote() {
+        if (typeof quoteDialog.close === "function") {
+          quoteDialog.close();
+        } else {
+          quoteDialog.removeAttribute("open");
+          if (lastTrigger) { lastTrigger.focus(); }
+        }
+      }
+      document.querySelectorAll("[data-open-quote]").forEach(function (button) {
+        button.addEventListener("click", function () { openQuote(button); });
+      });
+      document.querySelector("[data-close-quote]").addEventListener("click", closeQuote);
+      quoteDialog.addEventListener("click", function (event) {
+        if (event.target === quoteDialog) { closeQuote(); }
+      });
+      quoteDialog.addEventListener("close", function () {
+        if (lastTrigger) { lastTrigger.focus(); }
+      });
+      quoteForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        if (!quoteForm.checkValidity()) {
+          quoteNotice.textContent = "Complete the required fields so the service desk has the basics.";
+          quoteForm.reportValidity();
+          return;
+        }
+        var details = new FormData(quoteForm);
+        var body = [
+          "Name: " + details.get("name"),
+          "Phone: " + details.get("phone"),
+          "Tool / brand / model: " + details.get("tool"),
+          "",
+          "Issue:",
+          details.get("issue")
+        ].join("\\n");
+        quoteNotice.textContent = "Opening your email client with the repair request.";
+        window.location.href = "mailto:gagan@newtontool.ca?subject=" + encodeURIComponent("Newton Tool Repair request: " + details.get("tool")) + "&body=" + encodeURIComponent(body);
+      });
+      renderDiagnostic();
+    }());
+  </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+{
+  "resolved": [
+    {
+      "sectionId": "site-header",
+      "registry": "@aceternity",
+      "item": "resizable-navbar",
+      "files": ["src/components/aceternity/resizable-navbar.tsx"],
+      "npmDependencies": ["framer-motion", "lucide-react", "clsx", "tailwind-merge"],
+      "license": "MIT",
+      "vendored": true
+    },
+    {
+      "sectionId": "hero-section",
+      "registry": "@aceternity",
+      "item": "hero-section-with-noise-background",
+      "files": ["src/components/aceternity/hero-section.tsx"],
+      "npmDependencies": ["framer-motion", "lucide-react"],
+      "license": "MIT",
+      "vendored": true
+    },
+    {
+      "sectionId": "authorized-marquee",
+      "registry": "@aceternity",
+      "item": "infinite-moving-cards",
+      "files": ["src/components/aceternity/infinite-moving-cards.tsx"],
+      "npmDependencies": ["clsx", "tailwind-merge"],
+      "license": "MIT",
+      "vendored": true
+    },
+    {
+      "sectionId": "authorized-certification",
+      "registry": "@aceternity",
+      "item": "bento-grid",
+      "files": ["src/components/aceternity/bento-grid.tsx"],
+      "npmDependencies": ["lucide-react", "clsx", "tailwind-merge"],
+      "license": "MIT",
+      "vendored": true
+    },
+    {
+      "sectionId": "workshop-services",
+      "registry": "@aceternity",
+      "item": "card-hover-effect",
+      "files": ["src/components/aceternity/card-hover-effect.tsx"],
+      "npmDependencies": ["framer-motion", "lucide-react"],
+      "license": "MIT",
+      "vendored": true
+    },
+    {
+      "sectionId": "repair-diagnostics",
+      "registry": "custom",
+      "item": "signature-diagnostic-engine",
+      "files": ["src/components/custom/diagnostic-engine.tsx"],
+      "npmDependencies": ["lucide-react", "framer-motion"],
+      "license": "Proprietary / Project",
+      "vendored": true
+    },
+    {
+      "sectionId": "sharpening-spotlight",
+      "registry": "@aceternity",
+      "item": "compare",
+      "files": ["src/components/aceternity/compare.tsx"],
+      "npmDependencies": ["framer-motion", "lucide-react"],
+      "license": "MIT",
+      "vendored": true
+    },
+    {
+      "sectionId": "fleet-care",
+      "registry": "@aceternity",
+      "item": "cta-with-background-noise",
+      "files": ["src/components/aceternity/cta-with-background-noise.tsx"],
+      "npmDependencies": ["lucide-react"],
+      "license": "MIT",
+      "vendored": true
+    },
+    {
+      "sectionId": "local-proof",
+      "registry": "@aceternity",
+      "item": "animated-testimonials",
+      "files": ["src/components/aceternity/animated-testimonials.tsx"],
+      "npmDependencies": ["framer-motion", "lucide-react"],
+      "license": "MIT",
+      "vendored": true
+    },
+    {
+      "sectionId": "location-hours",
+      "registry": "@aceternity",
+      "item": "simple-centered-contact-form",
+      "files": ["src/components/aceternity/simple-centered-contact-form.tsx"],
+      "npmDependencies": ["lucide-react"],
+      "license": "MIT",
+      "vendored": true
+    },
+    {
+      "sectionId": "site-footer",
+      "registry": "@aceternity",
+      "item": "footer-with-big-text",
+      "files": ["src/components/aceternity/footer-with-big-text.tsx"],
+      "npmDependencies": ["lucide-react"],
+      "license": "MIT",
+      "vendored": true
+    },
+    {
+      "sectionId": "quote-modal",
+      "registry": "shadcn",
+      "item": "dialog",
+      "files": ["src/components/ui/dialog.tsx"],
+      "npmDependencies": ["@radix-ui/react-dialog", "lucide-react"],
+      "license": "MIT",
+      "vendored": true
+    }
+  ],
+  "unresolved": []
+}

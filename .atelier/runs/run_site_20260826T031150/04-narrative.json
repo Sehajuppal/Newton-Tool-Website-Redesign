@@ -1,0 +1,44 @@
+{
+  "acts": [
+    {
+      "id": "act-1-arrival",
+      "feeling": "urgency",
+      "cause": "Hero viewport with live workshop status badge, immediate phone hotline, authorized warranty marquee, and instant quick-diagnostic intake.",
+      "claim": "A tool that stops working on a jobsite is burning contractor profit every hour it sits idle.",
+      "scrollShare": 0.20
+    },
+    {
+      "id": "act-2-authorization",
+      "feeling": "reassurance",
+      "cause": "Factory-authorized credentials for DeWalt, Metabo, Paslode, Rolair, Porter-Cable, and Flex with genuine OEM parts warranty path.",
+      "claim": "We are certified factory warranty partners who service tools to original manufacturer tolerances.",
+      "scrollShare": 0.20
+    },
+    {
+      "id": "act-3-diagnostics-workbench",
+      "feeling": "mastery",
+      "cause": "Interactive tool diagnostic selector matching symptoms to repair timelines, combined with precision carbide blade sharpening showcase.",
+      "claim": "Identify the fault before you arrive—saving hours on the bench and restoring edge-cut performance.",
+      "scrollShare": 0.35
+    },
+    {
+      "id": "act-4-fleet-proof",
+      "feeling": "dependability",
+      "cause": "Contractor fleet priority maintenance program, verified customer reviews, and step-by-step pre-dropoff checklist.",
+      "claim": "Vancouver construction outfits depend on our priority bench queue to keep multi-crew jobsites fully powered.",
+      "scrollShare": 0.15
+    },
+    {
+      "id": "act-5-location-intake",
+      "feeling": "readiness",
+      "cause": "Surrey unit #114 workshop map, live operating hours, direct email intake dialog, and instant phone call hotline.",
+      "claim": "Drop off your gear at unit #114 on 135th St or send pre-diagnostic details directly to our master mechanics.",
+      "scrollShare": 0.10
+    }
+  ],
+  "peakActId": "act-3-diagnostics-workbench",
+  "close": {
+    "kind": "cta",
+    "copy": "Drop off at #114 - 7533 135th St, Surrey BC or call (604) 503-3632 for instant bench check"
+  }
+}

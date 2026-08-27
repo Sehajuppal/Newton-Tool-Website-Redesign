@@ -1,0 +1,33 @@
+{
+  "styleId": "industrial-precision",
+  "rationale": "Industrial power tool and commercial equipment repair demands absolute trust, durability, and high technical competence. The aesthetic reflects heavy cast iron, precision machined carbide edges, and reliable workshop efficiency without generic SaaS fluff.",
+  "dials": {
+    "variance": 6,
+    "motion": 5,
+    "density": 8,
+    "graphics": 6
+  },
+  "paletteIntent": {
+    "ground": "deep industrial graphite slate (dark iron workshop ground with micro-texture)",
+    "raised": "machined tool steel elevated surface (crisp technical card container)",
+    "ink": "pure optical high-contrast white (maximum legibility across mobile & jobsite conditions)",
+    "inkSecondary": "brushed steel muted grey (technical specs, serial numbers, metadata)",
+    "line": "precision anodized hairline border (sharp structural gridlines)",
+    "accent": "industrial safety amber gold (high-visibility tool calibration & primary action trigger)",
+    "invertedGrounds": "light steel workshop ivory (high-contrast printable drop-off confirmation)"
+  },
+  "typePairing": {
+    "display": "Space Grotesk",
+    "text": "Plus Jakarta Sans",
+    "mono": "JetBrains Mono"
+  },
+  "refuseList": [
+    "No neon purple, indigo, or violet-cyan gradients",
+    "No generic SaaS glassmorphism cards with multi-color radial blur",
+    "No AI-generated fake 3D robot mechanics or cartoon wrenches",
+    "No unstyled 90s tables or unformatted part number walls",
+    "No low-contrast unreadable grey text on dark backgrounds",
+    "No hidden phone numbers or gated multi-step pricing blockers",
+    "No generic 3-column feature cards with abstract placeholder icons"
+  ]
+}

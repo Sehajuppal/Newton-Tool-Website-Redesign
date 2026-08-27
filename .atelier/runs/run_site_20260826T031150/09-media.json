@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": "comp-hero",
+      "kind": "comp",
+      "sectionId": "hero-section",
+      "source": "open-design",
+      "provider": "skipped",
+      "model": null,
+      "prompt": null,
+      "estimatedUsd": 0,
+      "path": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html",
+      "posterPath": null
+    },
+    {
+      "id": "comp-diagnostics",
+      "kind": "comp",
+      "sectionId": "repair-diagnostics",
+      "source": "open-design",
+      "provider": "skipped",
+      "model": null,
+      "prompt": null,
+      "estimatedUsd": 0,
+      "path": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html",
+      "posterPath": null
+    },
+    {
+      "id": "comp-sharpening",
+      "kind": "comp",
+      "sectionId": "sharpening-spotlight",
+      "source": "open-design",
+      "provider": "skipped",
+      "model": null,
+      "prompt": null,
+      "estimatedUsd": 0,
+      "path": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html",
+      "posterPath": null
+    }
+  ],
+  "signatureSurface": "type-in-motion",
+  "totalEstimatedUsd": 0,
+  "chains": [],
+  "approval": {
+    "approvedBy": "auto-zero-spend",
+    "approvedAt": "2026-08-26T03:36:30Z",
+    "ceilingUsd": 0
+  }
+}

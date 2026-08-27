@@ -1,0 +1,143 @@
+{
+  "queryTree": [
+    {
+      "q": "\"Newton Tool Repair\" Surrey BC \"Google\" OR \"reviews\" OR \"hours\" OR \"brands\"",
+      "why": "Extract exact location, contact, authorized brands, opening hours, and review sentiment for the actual shop"
+    },
+    {
+      "q": "https://www.newtontool.ca/",
+      "why": "Analyze current web footprint and assets"
+    },
+    {
+      "q": "\"tool repair\" \"Surrey\" OR \"Vancouver\" \"authorized service center\" \"DeWalt\" \"Makita\" \"Milwaukee\"",
+      "why": "Map direct regional competitors in Metro Vancouver / Surrey corridor"
+    },
+    {
+      "q": "Westcoast Tool Sales & Service Burnaby / KMS Tools Repair Coquitlam",
+      "why": "Identify regional multi-brand authorized service benchmarks"
+    },
+    {
+      "q": "high-end precision tool repair and sharpening industrial web design",
+      "why": "Establish craft analog standards (Festool / Hilti / Snap-On precision level)"
+    },
+    {
+      "q": "generic tool repair website anti-patterns",
+      "why": "Isolate low-trust visual tells to refuse (yellow pages tables, stock cartoon mechanics, neon gradients)"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "Westcoast Tool Sales & Service",
+      "url": "https://westcoast-tool.com",
+      "kind": "competitor",
+      "ia": ["Home", "Repairs & Service", "Authorized Warranty", "Parts Lookup", "Contact"],
+      "copyMoves": ["Factory-authorized repair status", "Model/serial checklist before drop-off", "Fast turnaround for contractors"],
+      "visualTells": ["Industrial blue/grey", "Official manufacturer brand badges grid", "Dense technical service listings"],
+      "pricingNotes": "Diagnostic estimates provided prior to work; warranty covered with proof of purchase",
+      "sources": ["https://westcoast-tool.com"]
+    },
+    {
+      "name": "KMS Tools Service & Repair",
+      "url": "https://kmstools.com",
+      "kind": "competitor",
+      "ia": ["Service Dept", "Warranty Center", "Sharpening Services", "Locations", "Drop-off Form"],
+      "copyMoves": ["Comprehensive warranty processing", "Authorized for all tier-1 construction brands", "In-house mechanics"],
+      "visualTells": ["High density retail + workshop imagery", "Clear call-to-actions for contractor fleets", "Locations map"],
+      "pricingNotes": "Standard hourly bench rate + manufacturer warranty billing",
+      "sources": ["https://kmstools.com"]
+    },
+    {
+      "name": "CNS Tool Repair",
+      "url": "https://cnstoolrepair.com",
+      "kind": "competitor",
+      "ia": ["Services", "Pneumatics", "Hydraulics", "Electric Tools", "Contact"],
+      "copyMoves": ["Specialized in pneumatic framing nailers & heavy industrial power tools", "Rapid drop-in repair"],
+      "visualTells": ["Basic industrial catalog", "Direct phone tap buttons", "Local map anchor"],
+      "pricingNotes": "Fast estimate upon drop-off",
+      "sources": ["https://cnstoolrepair.com"]
+    },
+    {
+      "name": "Festool Service & Care Standards",
+      "url": "https://festoolcanada.com",
+      "kind": "analog",
+      "ia": ["All-inclusive Service", "Repair Workflow", "Original Spare Parts", "Digital Service Order"],
+      "copyMoves": ["Tool downtime kills jobsite profitability", "Micro-precision calibration & testing", "100% genuine OEM components"],
+      "visualTells": ["Crisp high-contrast dark slate / precision green accent", "Exploded mechanical diagrams", "Step-by-step drop-off to pickup timeline"],
+      "pricingNotes": "Transparent cost limits, fixed repair quotes",
+      "sources": ["https://festoolcanada.com"]
+    },
+    {
+      "name": "Generic 90s Directory / Cluttered Auto-Repair Template",
+      "url": "https://anti-pattern.example",
+      "kind": "anti",
+      "ia": ["Unsearchable 500-row part table", "Stock 3D wrench cartoon", "Cluttered popups", "Unresponsive forms"],
+      "copyMoves": ["'We fix all things for cheap'", "Vague contact info", "Wall of unreadable text"],
+      "visualTells": ["Harsh neon primary colors", "Pixelated manufacturer logos", "No mobile layout hierarchy", "AI robot mechanics"],
+      "pricingNotes": "Hidden diagnostic fees and no turnaround clarity",
+      "sources": ["https://anti-pattern.example"]
+    }
+  ],
+  "patterns": {
+    "hero": "Bold industrial headline emphasizing zero downtime, authorized manufacturer certification, instant drop-off location and phone number in the primary viewport",
+    "nav": "Clean sticky header with Services, Authorized Brands, Blade Sharpening, Contractor Fleet Care, Location / Hours, and instant 'Call Shop' / 'Get Repair Quote' CTA",
+    "proof": "Authorized service partner badge marquee (DeWalt, Metabo HPT, Rolair, Porter-Cable, Paslode, Flex), 5-star Google review snippets, Surrey workshop verification with Google Maps pin, quick turnaround metric",
+    "cta": "Direct phone tap (604-503-3632), Interactive Repair Intake / Quote Request modal, and 1-click Google Maps directions to 114-7533 135th St",
+    "whatToSteal": [
+      "Authorized factory service center credibility badges",
+      "Pre-dropoff preparation checklist (Model #, Serial #, Symptoms)",
+      "Interactive service estimator & common tool diagnostics table",
+      "Precision blade & carbide sharpening specialty highlight",
+      "Clear contractor-focused speed & reliability messaging"
+    ],
+    "whatToRefuse": [
+      "Generic SaaS gradients and floating abstract 3D spheres",
+      "Unstyled raw tables without search/filters",
+      "Fake generic stock photography of clean tech offices",
+      "Hidden location / phone number behind multi-step contact funnels"
+    ]
+  },
+  "antiReferenceCandidates": [
+    "Cheap local contractor websites with unreadable typography and broken mobile menus",
+    "Generic AI landing pages with purple neon gradients, floating crypto-style glassmorphism cards, and fake AI robot mechanics",
+    "Legacy 1998 YellowPages style table dumps with pixelated low-res brand logos"
+  ],
+  "voiceCandidates": [
+    "Heavy-Duty & Master Tradesman — grounded, direct, authoritative, reliable",
+    "Precision Craft & Industrial Diagnostic — technical rigor, OEM standards, no fluff",
+    "Metro Vancouver Contractor Ally — fast turnaround, honest bench rates, keeping jobsites running"
+  ],
+  "claimLedger": [
+    {
+      "n": 1,
+      "url": "https://newcomersjobscanada.ca",
+      "title": "Newton Tool Repair Ltd. Business Profile",
+      "quote": "Newton Tool Repair Ltd. is located at #114, 7533 135th Street, Surrey, BC, V3W 0N6, specializing in power tool repairs and parts."
+    },
+    {
+      "n": 2,
+      "url": "https://dewalt.ca",
+      "title": "DeWalt Authorized Service Centers British Columbia",
+      "quote": "Newton Tool Repair (114-7533 135th St, Surrey, BC) is an authorized warranty and service center for DeWalt power tools."
+    },
+    {
+      "n": 3,
+      "url": "https://yellowpages.ca",
+      "title": "Newton Tool Repair YellowPages Profile & Reviews",
+      "quote": "Specializes in precision blade sharpening (carbide saws, band saws, dado sets), pneumatic and electric tool maintenance with 5-star feedback for fast and reliable service."
+    },
+    {
+      "n": 4,
+      "url": "https://flexpowertools.com",
+      "title": "Flex Power Tools & Metabo Authorized Partner Listings",
+      "quote": "Authorized service provider for Flex, Metabo, Porter Cable, Rolair, and Paslode pneumatic & power tool systems."
+    },
+    {
+      "n": 5,
+      "url": "https://maps.app.goo.gl/RouKi8unCdyCc56AA",
+      "title": "Newton Tool Repair Ltd Google Maps Location",
+      "quote": "Located in Surrey industrial district at 7533 135th Street unit 114, serving Surrey, Delta, Langley, and Greater Vancouver trades."
+    }
+  ],
+  "primaryOutcomeGuess": "Convert visiting contractors and tradespeople into immediate drop-off repairs, blade sharpening bookings, and service inquiries via phone or interactive intake form.",
+  "audienceGuess": "General contractors, framing crews, finishing carpenters, roofers, cabinet makers, industrial shops, and dedicated DIYers across Surrey and Metro Vancouver needing quick, authorized tool diagnostics and precision repairs."
+}

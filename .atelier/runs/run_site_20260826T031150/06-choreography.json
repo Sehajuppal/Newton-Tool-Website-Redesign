@@ -1,0 +1,77 @@
+{
+  "grammarId": "live-surface",
+  "signatureSurface": "type-in-motion",
+  "signatureMove": {
+    "name": "interactive-fault-bench-sync",
+    "description": "Interactive tactile diagnostic workbench where category and symptom selection immediately drives calibrated turnaround counters, pre-dropoff inspection checklists, and prefilled repair tickets with spring physics.",
+    "ownedBySectionId": "repair-diagnostics"
+  },
+  "devices": [
+    {
+      "sectionId": "site-header",
+      "device": "sticky-header-elevation",
+      "range": [0.0, 0.05],
+      "cue": "Hairline boundary darkens and backdrop filters smoothly as user scrolls off top fold"
+    },
+    {
+      "sectionId": "hero-section",
+      "device": "hero-intake-reveal",
+      "range": [0.0, 0.15],
+      "cue": "Split stage reveals bold headline, contractor status badge, and immediate diagnostic quick-start"
+    },
+    {
+      "sectionId": "authorized-marquee",
+      "device": "partner-tape-glide",
+      "range": [0.12, 0.30],
+      "cue": "Infinite linear glide of authorized factory brand marks pausing seamlessly on hover"
+    },
+    {
+      "sectionId": "authorized-certification",
+      "device": "bento-step-reveal",
+      "range": [0.25, 0.45],
+      "cue": "Staggered mechanical step reveals for counter intake protocol and OEM guarantee cards"
+    },
+    {
+      "sectionId": "workshop-services",
+      "device": "service-card-spotlight",
+      "range": [0.40, 0.60],
+      "cue": "Machined-steel card surface highlight following pointer position on desktop"
+    },
+    {
+      "sectionId": "repair-diagnostics",
+      "device": "live-diagnostic-engine",
+      "range": [0.55, 0.75],
+      "cue": "Active fault matrix with instant live state updates, turnaround calculations, and drop-off guidance"
+    },
+    {
+      "sectionId": "sharpening-spotlight",
+      "device": "carbide-edge-compare",
+      "range": [0.70, 0.85],
+      "cue": "Interactive comparison slider showing dull chipped blade tooth vs precision mirror-honed edge"
+    },
+    {
+      "sectionId": "location-hours",
+      "device": "workshop-map-pin",
+      "range": [0.85, 1.0],
+      "cue": "Direct Google Maps pin anchor and 1-click directions to #114 - 7533 135th St Surrey"
+    }
+  ],
+  "reducedMotion": {
+    "sticky-header-elevation": "static",
+    "hero-intake-reveal": "fade",
+    "partner-tape-glide": "static",
+    "bento-step-reveal": "fade",
+    "service-card-spotlight": "unchanged",
+    "live-diagnostic-engine": "unchanged",
+    "carbide-edge-compare": "unchanged",
+    "workshop-map-pin": "fade"
+  },
+  "fingerprint": {
+    "grammar": "live-surface",
+    "nav": "sticky-solid-header",
+    "hero": "split-diagnostic-intake-with-live-status",
+    "actShape": "5-act-arc-urgency-reassurance-mastery-dependability-readiness",
+    "close": "counter-dropoff-pin-with-email-intake-modal",
+    "signatureMove": "interactive-fault-bench-sync"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "easings": {
+    "enter": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "exit": "cubic-bezier(0.7, 0, 0.84, 0)",
+    "move": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "emphasis": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+  },
+  "durations": {
+    "micro": 100,
+    "short": 180,
+    "medium": 280,
+    "ceilingMs": 300
+  },
+  "springs": [
+    {
+      "name": "snappy-toggle",
+      "stiffness": 400,
+      "damping": 30
+    },
+    {
+      "name": "card-hover",
+      "stiffness": 300,
+      "damping": 25
+    },
+    {
+      "name": "dialog-reveal",
+      "stiffness": 320,
+      "damping": 28
+    }
+  ],
+  "rules": [
+    "Animate transform and opacity only for smooth hardware acceleration",
+    "Active button clicks must provide instantaneous 80ms scale(0.98) tactile feedback",
+    "Diagnostic selector state transitions must re-render in place without layout jitter",
+    "All animations must gracefully degrade to instant opacity fades under prefers-reduced-motion"
+  ],
+  "doNotAnimate": [
+    {
+      "target": "Body text and technical specification paragraphs",
+      "because": "Must remain perfectly stationary for rapid trade scanning on jobsite screens"
+    },
+    {
+      "target": "Hotline telephone triggers and direct call buttons",
+      "because": "Contractors with urgent breakdown needs must experience zero click latency or tap drift"
+    },
+    {
+      "target": "Map location coordinates and operating hours table",
+      "because": "Critical physical dispatch information must remain fixed and readable"
+    }
+  ],
+  "runtime": "motion",
+  "smoothScroll": "lenis",
+  "cursor": "none",
+  "grain": true,
+  "signatureAnimation": "Dynamic fault matrix where selecting tool category and symptom triggers an instant spring-driven counter re-evaluation, animated bench checklist assembly, and prefilled email modal."
+}

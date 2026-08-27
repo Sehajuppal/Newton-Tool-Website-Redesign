@@ -1,0 +1,272 @@
+{
+  "sections": [
+    {
+      "id": "site-header",
+      "actId": "act-1-arrival",
+      "role": "nav",
+      "content": {
+        "eyebrow": "🟢 Workshop Open: Mon-Fri 7AM-5PM / Sat 8AM-3PM",
+        "phone": "(604) 503-3632",
+        "wordmark": "NEWTON TOOL REPAIR LTD.",
+        "navLinks": ["Services", "Authorized Brands", "Sharpening", "Fleet Care", "Diagnostics", "Location"],
+        "cta": "Book Drop-Off / Quote"
+      },
+      "blockCandidates": [
+        {
+          "registry": "@aceternity",
+          "item": "resizable-navbar",
+          "fit": "High",
+          "why": "Provides sticky, compact desktop and mobile navigation with immediate phone hotline visibility"
+        }
+      ],
+      "requiredStates": ["default", "sticky-scrolled", "mobile-drawer-open", "phone-tap-active"],
+      "compPath": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html#main-navigation"
+    },
+    {
+      "id": "hero-section",
+      "actId": "act-1-arrival",
+      "role": "hero",
+      "content": {
+        "eyebrow": "Surrey workshop / service desk",
+        "headline": "Zero downtime for Surrey trades.",
+        "subheadline": "Factory-authorized warranty repair, air system overhauls, and custom carbide saw sharpening for general contractors, framers, and woodworkers across Metro Vancouver.",
+        "primaryCta": "Book Drop-Off / Quote",
+        "secondaryCta": "Get directions",
+        "phone": "(604) 503-3632",
+        "address": "#114 - 7533 135th Street, Surrey, BC"
+      },
+      "blockCandidates": [
+        {
+          "registry": "@aceternity",
+          "item": "hero-section-with-noise-background",
+          "fit": "High",
+          "why": "Industrial cast-iron texture with high-contrast technical headline and immediate intake triggers"
+        }
+      ],
+      "requiredStates": ["default", "quote-modal-triggered", "phone-hover", "map-link-hover"],
+      "compPath": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html#hero"
+    },
+    {
+      "id": "authorized-marquee",
+      "actId": "act-2-authorization",
+      "role": "trust",
+      "content": {
+        "label": "Authorized factory service partners & certified warranty center",
+        "brands": ["DeWalt", "Metabo HPT", "Rolair Systems", "Porter-Cable", "Paslode", "Flex Power Tools"]
+      },
+      "blockCandidates": [
+        {
+          "registry": "@aceternity",
+          "item": "infinite-moving-cards",
+          "fit": "High",
+          "why": "Continuous smooth marquee of authorized manufacturer badges with authentic industrial badge styling"
+        }
+      ],
+      "requiredStates": ["default", "hover-pause", "reduced-motion-static"],
+      "compPath": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html#authorized-brand-marquee"
+    },
+    {
+      "id": "authorized-certification",
+      "actId": "act-2-authorization",
+      "role": "features",
+      "content": {
+        "heading": "The right bench path for a warranty claim—or a hard-working tool past warranty.",
+        "oemGuarantees": [
+          "Factory-authorized service center credentials",
+          "Genuine OEM replacement parts direct from manufacturer",
+          "OEM mechanical tolerances and factory safety testing"
+        ],
+        "counterWorkflow": [
+          "Step 1: Check serial and warranty status at intake",
+          "Step 2: Transparent bench diagnostic report before teardown",
+          "Step 3: Rapid repair and electrical load/pneumatic safety testing"
+        ]
+      },
+      "blockCandidates": [
+        {
+          "registry": "@aceternity",
+          "item": "bento-grid",
+          "fit": "High",
+          "why": "Structured asymmetric grid separating OEM credentials from physical counter intake steps"
+        }
+      ],
+      "requiredStates": ["default", "card-focus", "step-active"],
+      "compPath": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html#authorized"
+    },
+    {
+      "id": "workshop-services",
+      "actId": "act-3-diagnostics-workbench",
+      "role": "features",
+      "content": {
+        "heading": "One workshop for the tools that move a crew forward.",
+        "services": [
+          {
+            "title": "Electric & cordless power tools",
+            "desc": "Impact drivers, drills, table saws, mitre saws, rotary hammers, and grinders restored with genuine factory switches, armatures, and electronics."
+          },
+          {
+            "title": "Pneumatic & air systems",
+            "desc": "Framing nailers, finish nailers, heavy compressors, regulators, and manifold overhauls with pressure seal replacements."
+          },
+          {
+            "title": "Industrial equipment & motors",
+            "desc": "Site generators, heavy demolition hammers, core drills, and industrial motors inspected for brushes, bearings, and field coils."
+          },
+          {
+            "title": "Custom carbide & blade sharpening",
+            "desc": "Precision computer-controlled grinding for circular saw blades, dado sets, band saws, planer knives, and router bits."
+          }
+        ]
+      },
+      "blockCandidates": [
+        {
+          "registry": "@aceternity",
+          "item": "card-hover-effect",
+          "fit": "High",
+          "why": "Mechanical steel card hover reveals with technical icon callouts and specification badges"
+        }
+      ],
+      "requiredStates": ["default", "card-hover", "card-active"],
+      "compPath": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html#services"
+    },
+    {
+      "id": "repair-diagnostics",
+      "actId": "act-3-diagnostics-workbench",
+      "role": "product",
+      "content": {
+        "heading": "Start with the fault. Arrive with a better drop-off.",
+        "subheading": "Select your tool type and symptoms below to get diagnostic expectations, bench preparation checklists, and estimated repair timelines.",
+        "categories": ["Cordless", "Pneumatic", "Heavy saws", "Sharpening"],
+        "symptoms": ["Motor sparks", "Loss of pressure", "Blade drift", "Won't turn on"]
+      },
+      "blockCandidates": [
+        {
+          "registry": "custom",
+          "item": "signature-diagnostic-engine",
+          "fit": "Signature",
+          "why": "Interactive dynamic diagnostic selector allowing instant fault troubleshooting and prefilled repair ticket creation"
+        }
+      ],
+      "requiredStates": ["category-selected", "symptom-selected", "model-typed", "live-result-rendered"],
+      "compPath": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html#diagnostics"
+    },
+    {
+      "id": "sharpening-spotlight",
+      "actId": "act-3-diagnostics-workbench",
+      "role": "product",
+      "content": {
+        "heading": "Keep the blade. Restore the cut.",
+        "body": "A dull saw blade burns hardwood, overloads motors, and produces tear-out. Our automated CNC wet-grinding service sharpens carbide teeth to mirror perfection—saving up to 70% compared to buying replacement blades.",
+        "specs": ["Carbide Saw Blades (8\"–16\")", "Dado Sets & Jointers", "Band Saw Blades", "Planer & Jointer Knives"]
+      },
+      "blockCandidates": [
+        {
+          "registry": "@aceternity",
+          "item": "compare",
+          "fit": "High",
+          "why": "Interactive visual comparison of dull chipped carbide teeth vs mirror-honed razor ground edge"
+        }
+      ],
+      "requiredStates": ["default", "slider-drag", "spec-badge-hover"],
+      "compPath": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html#sharpening"
+    },
+    {
+      "id": "fleet-care",
+      "actId": "act-4-fleet-proof",
+      "role": "cta",
+      "content": {
+        "heading": "A priority bench queue for the crews that cannot lose a day.",
+        "subheading": "Contractor accounts, batch maintenance, and fast-track drop-offs tailored for commercial framing teams, roofers, and industrial fabrication shops.",
+        "cta": "Talk to the service desk: (604) 503-3632"
+      },
+      "blockCandidates": [
+        {
+          "registry": "@aceternity",
+          "item": "cta-with-background-noise",
+          "fit": "High",
+          "why": "High-impact contractor banner with industrial grid backing and direct phone trigger"
+        }
+      ],
+      "requiredStates": ["default", "phone-button-hover", "focus-visible"],
+      "compPath": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html#fleet"
+    },
+    {
+      "id": "local-proof",
+      "actId": "act-4-fleet-proof",
+      "role": "proof",
+      "content": {
+        "heading": "The standard is simple: clear advice, fair repair discussion, work that gets back on site.",
+        "reviews": [
+          {
+            "quote": "Amazing customer service and very reasonable pricing for tool repairs. Fixed our framing nailer same day.",
+            "author": "Surrey Framing Contractor",
+            "source": "Google Reviews"
+          },
+          {
+            "quote": "Sharpened our custom carbide dado sets with micro precision. Saved us hundreds over buying new blades.",
+            "author": "Custom Woodworking Shop, Langley",
+            "source": "YellowPages Verified"
+          }
+        ]
+      },
+      "blockCandidates": [
+        {
+          "registry": "@aceternity",
+          "item": "animated-testimonials",
+          "fit": "High",
+          "why": "Grounded contractor quotes with verified location badges and external review links"
+        }
+      ],
+      "requiredStates": ["default", "testimonial-switch", "verified-badge-click"],
+      "compPath": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html#local-proof"
+    },
+    {
+      "id": "location-hours",
+      "actId": "act-5-location-intake",
+      "role": "contact",
+      "content": {
+        "heading": "Bring the tool, the power source, and the details that tell the bench what happened.",
+        "address": "114 - 7533 135th Street, Surrey, BC V3W 0N6",
+        "hours": "Mon–Fri: 7:00 AM – 5:00 PM | Sat: 8:00 AM – 3:00 PM | Sun: Closed",
+        "checklist": ["Bring the battery or air coupling used during fault", "Have tool model and serial number handy", "Mention any past repairs or sudden drops"]
+      },
+      "blockCandidates": [
+        {
+          "registry": "@aceternity",
+          "item": "simple-centered-contact-form",
+          "fit": "High",
+          "why": "Interactive map embed combined with step-by-step physical counter drop-off instructions"
+        }
+      ],
+      "requiredStates": ["default", "map-embed-active", "form-input-focus"],
+      "compPath": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html#location"
+    },
+    {
+      "id": "site-footer",
+      "actId": "act-5-location-intake",
+      "role": "footer",
+      "content": {
+        "wordmark": "NEWTON TOOL REPAIR LTD.",
+        "tagline": "Surrey's Premier Authorized Power Tool & Precision Sharpening Center",
+        "phone": "(604) 503-3632",
+        "email": "gagan@newtontool.ca",
+        "address": "#114 - 7533 135th Street, Surrey, BC V3W 0N6",
+        "copyright": "© 2026 Newton Tool Repair Ltd. All rights reserved."
+      },
+      "blockCandidates": [
+        {
+          "registry": "@aceternity",
+          "item": "footer-with-big-text",
+          "fit": "High",
+          "why": "Bold industrial footer with comprehensive service index and manufacturer affiliations"
+        }
+      ],
+      "requiredStates": ["default", "link-hover"],
+      "compPath": ".atelier/runs/run_site_20260826T031150/od/newton-tool-repair.html#footer"
+    }
+  ],
+  "navModel": "sticky-solid-header",
+  "namespacesUsed": ["@aceternity"],
+  "wowBackground": null,
+  "fingerprint": "industrial-precision-newton-v1"
+}
